@@ -1,0 +1,33 @@
+{
+  "name": "stock-challenge",
+  "version": "0.0.1",
+  "description": "Parse a file with various stock and order commands, calculate order values",
+  "main": "stock.ts",
+  "dependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/proxyquire": "^1.3.28",
+    "@types/tape": "^4.13.2",
+    "colortape": "^0.1.2",
+    "nodemon": "^2.0.15",
+    "proxyquire": "^2.1.3",
+    "tape": "^5.3.2"
+  },
+  "scripts": {
+    "test": "ts-node node_modules/tape/bin/tape src/**/*.test.ts | colortape",
+    "test:watch": "nodemon --watch 'src/**' --ext 'ts' --exec 'npm test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timothyjoh/stock-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timothyjoh/stock-challenge/issues"
+  },
+  "homepage": "https://github.com/timothyjoh/stock-challenge#readme"
+}
