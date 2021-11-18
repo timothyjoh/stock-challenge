@@ -9,13 +9,13 @@ const { extract } = proxyquire('./extract', {
   },
   './process': {
     process: (data: unknown) => {
-      return 'processing'
+      return { state: 'state', report: 'report' }
     },
   },
 })
 
 test('Extract with good file name', (t) => {
-  t.equal(extract('example1.txt'), 'processing')
+  t.equal(extract('example1.txt'), 'report')
   t.end()
 })
 

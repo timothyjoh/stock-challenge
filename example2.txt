@@ -6,3 +6,7 @@ order kate hats 20
 checkin socks 30
 order dan socks 35
 order kate socks 10
+order dan necktie 2
+order dan keychain 1
+checkin keychain 30
+order dan keychain 1

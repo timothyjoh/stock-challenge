@@ -17,7 +17,7 @@
     "tape": "^5.3.2"
   },
   "scripts": {
-    "test": "ts-node node_modules/tape/bin/tape src/**/*.test.ts | colortape",
+    "test": "ts-node node_modules/tape/bin/tape '**/*.test.ts' | colortape",
     "test:watch": "nodemon --watch 'src/**' --ext 'ts' --exec 'npm test'"
   },
   "repository": {
